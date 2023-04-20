@@ -4,7 +4,7 @@
     }
 
     function calcHypot(float $cat1, float $cat2) {
-        return sqrt($cat1) + sqrt($cat2);
+        return $cat1 ** 2 + $cat2 ** 2;
     }
 
     echoln(calcHypot(25.4, 22.1));
