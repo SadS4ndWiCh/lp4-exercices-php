@@ -19,17 +19,13 @@
     </nav>
     
     <div class="div-conteudo">
-        <form>
-            <label for="num1">Primeiro número:</label>
-            <input id="num1" type="number" name="num1" placeholder="Digite o número 1">
-            <label for="num2">Primeiro número:</label>
-            <input id="num2" type="number" name="num2" placeholder="Digite o número 2">
+        <form method="POST" action="logica/temperature-process.php">
+            <label for="temperature">Temperature</label>
+            <input id="temperature" type="number" name="temperature" placeholder="Digite uma temperatura">
 
-            <select name="operation" id="operation">
-                <option value="+">Adição</option>
-                <option value="-">Subtração</option>
-                <option value="*">Multiplicação</option>
-                <option value="/">Divisão</option>
+            <select name="temperature-convert-to" id="temperature-convert-to">
+                <option value="c-f">Celcius para Fahrenheit</option>
+                <option value="f-c">Fahrenheit para Celcius</option>
             </select>
 
             <input type="submit" id="botao" value="CALCULAR">
